@@ -45,6 +45,13 @@ public class Recursion {
             else return true;
 
         return isPalindrome(text, i+1);
+
+    }
+    
+    static int fibonacci(int n){
+        if(n==0 || n==1) return 1;
+        System.out.println(n);
+        return fibonacci(n-1)+fibonacci(n-2);
     }
 
     public static void main(String[] args) {
@@ -66,7 +73,7 @@ public class Recursion {
 
         System.out.println(isPalindrome("malayala", 0));
 
-
+        System.out.println(fibonacci(5));
 
     }
     
